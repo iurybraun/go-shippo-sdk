@@ -11,7 +11,8 @@ type TransactionInput struct {
 
 	Shipment         *ShipmentInput `json:"shipment,omitempty"`              // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
 	CarrierAccount   string         `json:"carrier_account,omitempty"`       // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
-	ServerLevelToken string         `json:"servericelevel_token, omitempty"` // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
+	//ServerLevelToken string         `json:"servericelevel_token, omitempty"` // instant call only: https://goshippo.com/docs/reference#transactions-create-instant
+	ServerLevelToken string         `json:"servicelevel_token, omitempty"`
 }
 
 // See https://goshippo.com/docs/reference#transactions
